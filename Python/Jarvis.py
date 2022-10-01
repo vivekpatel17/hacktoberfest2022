@@ -19,9 +19,8 @@ import time
 engine = pyttsx3.init()
 wolframalpha_app_id = '725EY8-2JJ8XA7E4H'
 
-def speak(audio):
-    engine.say(audio)
-    engine.runAndWait()
+
+
 
 
 def time_():
