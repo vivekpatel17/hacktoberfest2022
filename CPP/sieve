@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+#define ll long long
+
+using namespace std;
+
+int main() {
+    
+    vector<int> isPrime(1000000 , 1);
+    isPrime[0] = isPrime[1] = 0;
+
+    for(int i=2 ; i*i<=1000000 ; i++) {
+        if (isPrime[i] <= 1000000) {
+            for(int j=i*i ; j<=n ; j+=i) {
+                isPrime[j] = false;
+            }
+        }
+    }
+
+}
