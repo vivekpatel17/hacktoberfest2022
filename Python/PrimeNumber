@@ -9,7 +9,10 @@ num = 407
 if num > 1:
    # check for factors
    for i in range(2,num):
-      
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
    else:
        print(num,"is a prime number")
        
@@ -22,5 +25,3 @@ Output
 407 is not a prime number
 11 times 37 is 407
 Here, we have used a for..else statement to check if num is prime.
-
-   
