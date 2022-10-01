@@ -8,4 +8,22 @@ public class Insertion_sort {
 		sort(nums);
 	}
 
-	
+	public static void sort(int[] nums) {
+		int i = 1;
+		while (i < nums.length) {
+			int temp, j;
+			temp = nums[i];
+			j = i;
+
+			while (j > 0 && nums[j - 1] > temp) {
+				nums[j] = nums[j - 1];
+				j--;
+			}
+			nums[j] = temp;
+			i++;
+		}
+		System.out.println("After Sorting " + Arrays.toString(nums));
+
+	}
+}
+
